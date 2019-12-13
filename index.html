@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>3d practice</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+<style>
+  .container{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    max-height: 100vh;
+    max-width: 100vw;
+    justify-content: center;
+  }
+  .text{
+    text-align: center;
+    flex: 1;
+  }
+  .text p, .text p a{
+    padding-top: 20rem;
+    text-decoration: none;
+    color: black;
+  }
+  model-viewer{
+    flex: 1;
+    height: 300px;
+    width: 300px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .container{
+      display: block;
+      margin: 1rem;
+    }
+    .text p, .text p a{
+      padding-top: 1rem;
+    }
+  }
+
+</style>
+<body>
+  <div class="container">
+    <div class="text">
+      <p><a href="https://skfb.ly/6P8CM" target="_blank">3D Model by too-bizzy-drawing on SketchFab</a></p>
+    </div>
+    <model-viewer src="scene.gltf" alt="A 3D model of an astronaut" auto-rotate camera-controls background-color="white"></model-viewer>
+  </div>
+    
+</body>
+</html>
