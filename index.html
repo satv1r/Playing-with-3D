@@ -19,16 +19,26 @@
     box-sizing: border-box;
   }
   .container{
+    padding: 2rem;
     height: 95vh;
     width: 95vw;
     display: grid;
+    grid-gap: 1rem;
     grid-template-columns: auto auto auto;
   }
 
-  .container model-viewer{
-    height: 100%;
-    width: 100%;
-    margin: 1rem;
+  .container .card{
+    max-height: 45%;
+    padding: 2rem;
+    background: #f4f4f4;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .container .card model-viewer{
+    height: 85%;
+    width: 85%;
+    margin: auto;
   }
 
   @media only screen and (max-width: 900px) and (min-width:501px) {
@@ -56,32 +66,34 @@
   </div>
     
   <div class="container">
-    <model-viewer id='rocket' src="assets/models/Rocket_Ship_01.gltf" ar ar-scale='auto'  camera-controls exposure='0.2' ios-src="assets/models/Rocket_Ship_01.usdz" 
-    poster="assets/img/rocket_poster.png"
-    reveal="interaction" preload
-    quick-look-browsers='safari chrome'
-    alt="A 3D model of a rocketship">
-      <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 30px; right: 30px; ">
-      👋 Activate AR
-      </button>
-    </model-viewer>
-    <model-viewer src="assets/models/Rocket_Ship_01.gltf" ar ar-scale='auto'  camera-controls exposure='0.2' ios-src="assets/models/Rocket_Ship_01.usdz" 
-    poster="assets/img/rocket_poster.png"
-    reveal="interaction" preload quick-look-browsers='safari chrome'
-    alt="A 3D model of a rocketship">
-      <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 30px; right: 30px; ">
-      👋 Activate AR
-      </button>
-    </model-viewer>
-    <model-viewer src="assets/models/Rocket_Ship_01.gltf" ar ar-scale='auto'  camera-controls exposure='0.2' 
-    ios-src="assets/models/Rocket_Ship_01.usdz" 
-    poster="assets/img/rocket_poster.png"
-    reveal="interaction" preload quick-look-browsers='safari chrome'
-    alt="A 3D model of a rocketship">
-      <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 30px; right: 30px; ">
-      👋 Activate AR
-      </button>
-    </model-viewer>
+    <div class="card">
+      <h1>A Rocket</h1>
+      <model-viewer id='rocket' src="assets/models/Rocket_Ship_01.gltf" ar ar-scale='auto'  camera-controls exposure='0.2' ios-src="assets/models/    Rocket_Ship_01.usdz" poster="assets/img/rocket_poster.png"reveal="interaction" preload quick-look-browsers='safari chrome'
+        alt="A 3D model of a rocketship">
+        <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 30px; right: 30px; ">
+        👋 Activate AR
+        </button>
+      </model-viewer>
+    </div>
+    <div class="card">
+      <h1>A Rocket</h1>
+      <model-viewer id='rocket' src="assets/models/Rocket_Ship_01.gltf" ar ar-scale='auto'  camera-controls exposure='0.2' ios-src="assets/models/    Rocket_Ship_01.usdz" poster="assets/img/rocket_poster.png"reveal="interaction" preload quick-look-browsers='safari chrome'
+        alt="A 3D model of a rocketship">
+        <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 30px; right: 30px; ">
+        👋 Activate AR
+        </button>
+      </model-viewer>
+    </div>
+    <div class="card">
+      <h1>A Rocket</h1>
+      <model-viewer id='rocket' src="assets/models/Rocket_Ship_01.gltf" ar ar-scale='auto'  camera-controls exposure='0.2' ios-src="assets/models/    Rocket_Ship_01.usdz" poster="assets/img/rocket_poster.png"reveal="interaction" preload quick-look-browsers='safari chrome'
+        alt="A 3D model of a rocketship">
+        <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 30px; right: 30px; ">
+        👋 Activate AR
+        </button>
+      </model-viewer>
+    </div>
+    
   </div>
   <div class="text">
     <p><a href="https://poly.google.com/view/ah8WSBbizA6" target="_blank">3D Model by Poly</a>, licensed under <a target='_blank' href="https://creativecommons.org/licenses/by/2.0/">CC-BY</a></p>
